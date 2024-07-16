@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 0;
+  font-size: 17px;
+  border-bottom: none;
+  background-image: url('mainlogo.png'); /* Specify the path to your background image */
+  background-repeat: no-repeat;
+  background-position: center 15px; /* Center the background image horizontally */
+  background-size: contain; /* Ensure the background image fits within the header */
+  font-family: Arial;
+  transition:   top 0.3s;
+}
+
+/* Add a height to create the appearance of a header */
+#navbar h1 {
+  height: 100px; /* Adjust the height as needed */
+}
+
+/* Add a background color to the header */
+#navbar h1 {
+  background-color: #ffffff;
+}
+#navbar::before,
+#navbar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 20px; /* Adjust the height as needed */
+  background-color: #CDA349; /* Gold color */
+}
+
+#navbar::before {
+  top: 0px; /* Create the top border */
+}
+
+#navbar::after {
+  bottom: -15px; /* Create the top border */
+}
+
+#navbar a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: #000000;
+  font-family: Arial;
+}
+
+header {
+  position: relative; /* Make the header relatively positioned */
+  background-color: #ffffff;
+  padding: 20px 0;
+  z-index: 100; /* Ensure the header is on top of other content */
+  transition: position 0.3s; /* Add a smooth transition effect */
+  margin-bottom: 40px; /* Add margin at the bottom to create space */
+}
+
+.logo {
+  text-align: center; /* Center the logo horizontally */
+  flex: 1;
+  margin-right: 5px; /* Adjust the margin to move the navbar closer to the logo */
+}
+
+.logo img {
+  max-width: 100%; /* Ensure the logo doesn't exceed its container width */
+  height: auto; /* Maintain the aspect ratio */
+} 
+
+
+.header-content {
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center;
+  padding: 10px 20px;
+  flex: 1;
+}
+
+.header-contact, .footer-contact {
+  text-align: right;
+  margin-left: auto;
+}
+
+.header-contact a, .footer-contact a {
+  display: block;
+  margin-bottom: 5px; /* Add spacing between phone and email */
+  color: #000000;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  background-color: #ffffff;
+  color: #CDA349;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-evenly; /* Use space-evenly to distribute space evenly */
+  padding: 20px;
+  margin-top: 40px; /* You can adjust the margin-top as needed */
+  margin-right: 10px;
+}
+
+form {
+  width: 500px;
+  height: auto;
+  /* Remove margin-left and margin-right to center the form within the contact-section */
+  text-align: left;
+  padding: 80px;
+  border: 3px solid #CDA349;
+  border-radius: 30px;
+  background-color: #CDA349;
+  margin-right: 20px;
+}
+
+/* Add a bit of spacing for form elements */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  gap: 20px; /* Add spacing between form elements */
+  height: 240px;
+  width: 400px;
+  text-align: center;
+}
+
+.form-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  width: 100%;
+  margin-top: 200px;
+  text-align: center;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.image {
+  flex: 1;
+  margin-left: 40px; /* Adjust margin-left as needed */
+}
+
+h1 {
+  color: #fffff;
+  text-align: center;
+  font-family: Arial;
+}
+
+h2 {
+  color: #fffff;
+  text-align: center;
+  margin-bottom: 130px;
+  font-family: Arial;
+}
+
+h3 {
+  color: #ffffff;
+  text-align: center;
+  font-family: Arial;
+}
+
+.form-container h3 {
+  color: #000000;
+  text-align: center;
+  padding: 10px;
+  font-size: 36px;
+  margin-top: -20px;
+}
+
+.background-section {
+  background-image: url("gooseimages/road2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Scale the background image to cover the entire section */
+  background-position: center;
+  color: #ffffff; /* Set the text color to contrast with the background */
+  text-align: center; /* Center-align the text */
+  padding: 100px 0; /* Add padding to space out the content */
+  font-family: Arial;
+  text-align: center;
+  padding: 20px;
+}
+
+h1, h2, h3, h4 {
+  margin: 10px 0; /* Adjust the top and bottom margins for all headings */
+  padding: 10px; /* Remove any padding on the headings */
+}
+
+.background-section h1 {
+  font-size: 72px; /* Adjust the font size as needed */
+}
+
+.background-section h2 {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-top: 20px; /* Add spacing between h1 and h2 */
+}
+
+.background-section {
+  margin-top: 10px;
+}
+
+.image-carousel {
+  display: flex; /* Display images in a row */
+  overflow: hidden; /* Hide overflow to create a fixed width container */
+  border-radius: 10px;
+  width: 800px; /* Adjust to the desired width */
+  height: 600px; /* Adjust to the desired height */
+}
+
+.carousel-image {
+  width: 100%; /* Take up the full width of the container */
+  height: auto; /* Take up the full height of the container */
+  transition: transform 3s; /* Add a smooth transition effect */
+}
+
+input {
+  width: 117%; /* Make input elements full width */
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: Arial;
+}
+
+.input-element {
+  display: flex;
+  flex-direction: row; /* Display input elements in a row */
+  align-items: center; /* Align input elements vertically */
+  margin-top: 0px;
+  gap: 10px;
+  width: 40%;
+  font-family: Arial;
+}
+
+.input-element1 {
+  display: flex;
+  flex-direction: row; /* Display input elements in a row */
+  align-items: center; /* Align input elements vertically */
+  margin-top: 0px;
+  gap: 10px;
+  width: 30%;
+  font-family: Arial;
+}
+
+.input-element input {
+  flex: 2; /* Distribute available space equally between label and input */
+  width: auto; /* Allow the input to expand */
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.input-element1 input {
+  flex: 3; /* Distribute available space equally between label and input */
+  width: auto; /* Allow the input to expand */
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  border-radius: 5px;
+  width: 121%;
+  font-family: Arial;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #CDA349;
+  margin-bottom: 10px; /* Add space below select */
+}
+
+button {
+  background-color: #000000;
+  color: #CDA349;
+  padding: 10px 20px;
+  border: 1px solid #CDA349;
+  border-radius: 10px;
+  margin-top: 10px; /* Add space above the button */
+  width: 122%;
+  font-family: Arial;
+}
+
+.side-by-side {
+  display: flex;
+  gap: 10px;
+}
+
+.paragraph {
+  flex: 1;
+  border: 2px solid #CDA349;
+  color: #000000;
+  background-color: #CDA349;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Style the footer */
+footer {
+  background: #CDA349;
+  color: #000000;
+  text-align: center;
+  padding: 10px;
+  display: flex; /* Use flexbox to align content in the footer */
+  justify-content: center; /* Center content horizontally in the footer */
+  align-items: center; /* Center content vertically in the footer */
+  font-family: Arial;
+}
